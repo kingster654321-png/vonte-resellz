@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VONTE RESELLZ</title>
+<style>
+:root{--purple:#7c3aed;--blue:#2563eb;--dark:#0b1020;--light:#f5f7ff}
+*{box-sizing:border-box}body{margin:0;font-family:Arial,sans-serif;background:var(--light);color:#111827}
+header{background:linear-gradient(135deg,var(--purple),var(--blue));color:white;padding:22px 7%;display:flex;justify-content:space-between;align-items:center;gap:15px;flex-wrap:wrap}
+.logo{font-size:24px;font-weight:900;letter-spacing:1px}nav a{color:white;text-decoration:none;margin:0 8px;font-weight:700}
+.hero{padding:65px 7%;background:var(--dark);color:white;text-align:center}.hero h1{font-size:clamp(38px,8vw,72px);margin:0 0 12px}.hero p{font-size:18px;color:#dbeafe}
+.btn{display:inline-block;border:0;border-radius:999px;padding:12px 17px;background:var(--purple);color:white;font-weight:800;text-decoration:none;cursor:pointer}
+section{padding:42px 7%;max-width:1300px;margin:auto}h2{text-align:center;font-size:32px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:20px}.card{background:white;border-radius:18px;padding:18px;box-shadow:0 6px 22px #11182715}.product-img{height:150px;border-radius:13px;background:linear-gradient(135deg,#ddd6fe,#bfdbfe);display:grid;place-items:center;font-size:48px}.price{font-size:20px;font-weight:900;color:var(--purple);margin:12px 0}
+form{max-width:650px;margin:auto;background:white;padding:25px;border-radius:18px;box-shadow:0 6px 22px #11182715}label{display:block;font-weight:700;margin-top:13px}input,select,textarea{width:100%;padding:12px;margin-top:6px;border:1px solid #cbd5e1;border-radius:10px;font:inherit}textarea{min-height:110px}footer{text-align:center;background:var(--dark);color:white;padding:25px}
+.notice{font-size:13px;color:#64748b;text-align:center;margin-top:15px}
+
+.catalog-banner{width:100%;border-radius:18px;display:block;margin:20px 0;box-shadow:0 8px 28px #11182720}
+.category-note{background:#eef2ff;border-left:5px solid #7c3aed;padding:14px 16px;border-radius:10px;margin:20px 0}
+</style>
+</head>
+<body>
+<header><div class="logo">VONTE RESELLZ</div><nav><a href="#shop">Shop</a><a href="#order">Order</a><a href="#contact">Contact</a></nav></header>
+<div class="hero"><h1>FRESH DROPS. REAL STYLE.</h1><p>Clothes, shoes, accessories, and more — brought to you by VONTE RESELLZ.</p><a class="btn" href="#shop">Shop Now</a></div>
+
+<section id="visual-catalog"><h2>Our Catalog</h2>
+<img class="catalog-banner" src="vonte-catalog.jpeg" alt="VONTE RESELLZ catalog">
+<div class="category-note"><strong>1 OF 1 ITEMS:</strong> Limited pieces may be available. Message us to confirm availability, size, condition, and pricing.</div>
+</section>
+<section id="shop"><h2>Brands & Categories</h2><div class="grid"><div class="card"><div class="product-img">👕</div><h3>Essentials</h3><p>Photos and exact availability available by request.</p><div class="price">$60–$80</div><button class="btn" onclick="choose('Essentials')">Request Item</button></div>
+<div class="card"><div class="product-img">🟣</div><h3>Purple</h3><p>Photos and exact availability available by request.</p><div class="price">$100–$120</div><button class="btn" onclick="choose('Purple')">Request Item</button></div>
+<div class="card"><div class="product-img">👖</div><h3>Ksubi</h3><p>Photos and exact availability available by request.</p><div class="price">$100–$120</div><button class="btn" onclick="choose('Ksubi')">Request Item</button></div>
+<div class="card"><div class="product-img">🕷️</div><h3>Sp5der</h3><p>Photos and exact availability available by request.</p><div class="price">$80–$100</div><button class="btn" onclick="choose('Sp5der')">Request Item</button></div>
+<div class="card"><div class="product-img">🧴</div><h3>Cologne</h3><p>Photos and exact availability available by request.</p><div class="price">$75–$150</div><button class="btn" onclick="choose('Cologne')">Request Item</button></div>
+<div class="card"><div class="product-img">👟</div><h3>Balenciaga</h3><p>Photos and exact availability available by request.</p><div class="price">$100–$200</div><button class="btn" onclick="choose('Balenciaga')">Request Item</button></div>
+<div class="card"><div class="product-img">👜</div><h3>Bottega</h3><p>Photos and exact availability available by request.</p><div class="price">$100–$200</div><button class="btn" onclick="choose('Bottega')">Request Item</button></div>
+<div class="card"><div class="product-img">🧢</div><h3>Supreme</h3><p>Photos and exact availability available by request.</p><div class="price">$20–$100</div><button class="btn" onclick="choose('Supreme')">Request Item</button></div>
+<div class="card"><div class="product-img">⭐</div><h3>Hellstar</h3><p>Photos and exact availability available by request.</p><div class="price">$75–$150</div><button class="btn" onclick="choose('Hellstar')">Request Item</button></div>
+<div class="card"><div class="product-img">👖</div><h3>Denim Tears</h3><p>Photos and exact availability available by request.</p><div class="price">Ask for price</div><button class="btn" onclick="choose('Denim Tears')">Request Item</button></div>
+<div class="card"><div class="product-img">💎</div><h3>Chrome Hearts</h3><p>Photos and exact availability available by request.</p><div class="price">Ask for price</div><button class="btn" onclick="choose('Chrome Hearts')">Request Item</button></div>
+<div class="card"><div class="product-img">🎨</div><h3>Gallery Dept.</h3><p>Photos and exact availability available by request.</p><div class="price">Ask for price</div><button class="btn" onclick="choose('Gallery Dept.')">Request Item</button></div>
+<div class="card"><div class="product-img">👕</div><h3>Amiri</h3><p>Photos and exact availability available by request.</p><div class="price">Ask for price</div><button class="btn" onclick="choose('Amiri')">Request Item</button></div>
+<div class="card"><div class="product-img">🩳</div><h3>Eric Emanuel</h3><p>Photos and exact availability available by request.</p><div class="price">Ask for price</div><button class="btn" onclick="choose('Eric Emanuel')">Request Item</button></div>
+<div class="card"><div class="product-img">🌴</div><h3>Palm Angels</h3><p>Photos and exact availability available by request.</p><div class="price">Ask for price</div><button class="btn" onclick="choose('Palm Angels')">Request Item</button></div>
+<div class="card"><div class="product-img">🖤</div><h3>VLONE</h3><p>Photos and exact availability available by request.</p><div class="price">Ask for price</div><button class="btn" onclick="choose('VLONE')">Request Item</button></div>
+<div class="card"><div class="product-img">🧢</div><h3>Warren Lotas</h3><p>Photos and exact availability available by request.</p><div class="price">Ask for price</div><button class="btn" onclick="choose('Warren Lotas')">Request Item</button></div>
+<div class="card"><div class="product-img">👟</div><h3>Rick Owens</h3><p>Photos and exact availability available by request.</p><div class="price">Ask for price</div><button class="btn" onclick="choose('Rick Owens')">Request Item</button></div>
+<div class="card"><div class="product-img">🧥</div><h3>Maison Margiela</h3><p>Photos and exact availability available by request.</p><div class="price">Ask for price</div><button class="btn" onclick="choose('Maison Margiela')">Request Item</button></div>
+<div class="card"><div class="product-img">🧥</div><h3>Moncler</h3><p>Photos and exact availability available by request.</p><div class="price">Ask for price</div><button class="btn" onclick="choose('Moncler')">Request Item</button></div>
+<div class="card"><div class="product-img">✝️</div><h3>Fear of God</h3><p>Photos and exact availability available by request.</p><div class="price">Ask for price</div><button class="btn" onclick="choose('Fear of God')">Request Item</button></div>
+<div class="card"><div class="product-img">👟</div><h3>Jordan</h3><p>Photos and exact availability available by request.</p><div class="price">Ask for price</div><button class="btn" onclick="choose('Jordan')">Request Item</button></div>
+<div class="card"><div class="product-img">👟</div><h3>Yeezy</h3><p>Photos and exact availability available by request.</p><div class="price">Ask for price</div><button class="btn" onclick="choose('Yeezy')">Request Item</button></div>
+<div class="card"><div class="product-img">👜</div><h3>Prada</h3><p>Photos and exact availability available by request.</p><div class="price">Ask for price</div><button class="btn" onclick="choose('Prada')">Request Item</button></div>
+<div class="card"><div class="product-img">👜</div><h3>Dior</h3><p>Photos and exact availability available by request.</p><div class="price">Ask for price</div><button class="btn" onclick="choose('Dior')">Request Item</button></div>
+<div class="card"><div class="product-img">👜</div><h3>Louis Vuitton</h3><p>Photos and exact availability available by request.</p><div class="price">Ask for price</div><button class="btn" onclick="choose('Louis Vuitton')">Request Item</button></div>
+<div class="card"><div class="product-img">🌊</div><h3>Stüssy</h3><p>Photos and exact availability available by request.</p><div class="price">Ask for price</div><button class="btn" onclick="choose('Stüssy')">Request Item</button></div>
+<div class="card"><div class="product-img">🧢</div><h3>Corteiz</h3><p>Photos and exact availability available by request.</p><div class="price">Ask for price</div><button class="btn" onclick="choose('Corteiz')">Request Item</button></div>
+<div class="card"><div class="product-img">👕</div><h3>Kapital</h3><p>Photos and exact availability available by request.</p><div class="price">Ask for price</div><button class="btn" onclick="choose('Kapital')">Request Item</button></div>
+<div class="card"><div class="product-img">👕</div><h3>Rhude</h3><p>Photos and exact availability available by request.</p><div class="price">Ask for price</div><button class="btn" onclick="choose('Rhude')">Request Item</button></div>
+<div class="card"><div class="product-img">⭐</div><h3>Trapstar</h3><p>Photos and exact availability available by request.</p><div class="price">Ask for price</div><button class="btn" onclick="choose('Trapstar')">Request Item</button></div></div>
+
+<div class="card"><div class="product-img">🧥</div><h3>Jackets</h3><p>Puffers and streetwear jackets.</p><div class="price">Ask for price</div><button class="btn" onclick="choose('Jackets')">Request Item</button></div>
+<div class="card"><div class="product-img">👖</div><h3>Denim & Pants</h3><p>Denim, cargos, and designer styles.</p><div class="price">Ask for price</div><button class="btn" onclick="choose('Denim & Pants')">Request Item</button></div>
+<div class="card"><div class="product-img">🩳</div><h3>Shorts & Sweatpants</h3><p>Streetwear bottoms and shorts.</p><div class="price">Ask for price</div><button class="btn" onclick="choose('Shorts & Sweatpants')">Request Item</button></div>
+<div class="card"><div class="product-img">🎒</div><h3>Bags & Backpacks</h3><p>Backpacks, duffle bags, and crossbody bags.</p><div class="price">Ask for price</div><button class="btn" onclick="choose('Bags & Backpacks')">Request Item</button></div>
+<div class="card"><div class="product-img">🧢</div><h3>Hats & Beanies</h3><p>Caps and winter headwear.</p><div class="price">Ask for price</div><button class="btn" onclick="choose('Hats & Beanies')">Request Item</button></div>
+<p class="notice">Catalog created from your provided list. Add real product photos, exact prices, sizes, condition, and inventory before publishing.</p></section>
+<section id="order"><h2>Request an Order</h2><form action="mailto:Javonte.diggs13@gmail.com" method="post" enctype="text/plain">
+<label for="name">Your name</label><input id="name" name="Name" required>
+<label for="item">What item or brand are you looking for?</label><input id="item" name="Item" required>
+<label for="size">Size (if needed)</label><input id="size" name="Size">
+<label for="method">Preferred option</label><select id="method" name="Preferred option"><option>Meetup</option><option>Pickup</option><option>Delivery discussion</option></select>
+<label for="message">Extra details</label><textarea id="message" name="Details"></textarea>
+<br><br><button class="btn" type="submit">Send Request</button>
+<p class="notice">Email: Javonte.diggs13@gmail.com</p></form></section>
+<section id="contact"><h2>Contact</h2><p style="text-align:center">Email: Javonte.diggs13@gmail.com<br>Service area: Phoenix, Arizona<br>Instagram: @YOUR_HANDLE</p></section>
+<footer>© 2026 VONTE RESELLZ • Clothing & Shoes</footer>
+<script>function choose(item){document.getElementById('item').value=item;location.hash='order';}</script>
+</body></html>
