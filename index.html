@@ -646,46 +646,74 @@ condition, sizing, and shipping/delivery information.
 
 <!-- ORDER REQUEST -->
 <section id="order">
-<h2>Request Pricing / Order</h2>
+  <h2>Request Pricing</h2>
 
-<form action="mailto:javonte.diggs13@gmail.com" method="post" enctype="text/plain">
+  <form action="https://formspree.io/f/xgavvbvy" method="POST">
 
-<label for="name">Your name</label>
-<input id="name" name="Name" required>
+    <label for="name">Your Name</label>
+    <input
+      id="name"
+      name="name"
+      type="text"
+      placeholder="Enter your name"
+      required
+    >
 
-<label for="email">Your email</label>
-<input id="email" name="Customer Email" type="email" required>
+    <label for="email">Your Email</label>
+    <input
+      id="email"
+      name="email"
+      type="email"
+      placeholder="Enter your email"
+      required
+    >
 
-<label for="item">Item or brand</label>
-<input id="item" name="Item" required>
+    <label for="item">Item / Brand</label>
+    <input
+      id="item"
+      name="item"
+      type="text"
+      placeholder="Example: Jordan 4s"
+      required
+    >
 
-<label for="size">Size</label>
-<input id="size" name="Size">
+    <label for="size">Size</label>
+    <input
+      id="size"
+      name="size"
+      type="text"
+      placeholder="Example: 10"
+    >
 
-<label for="method">Preferred option</label>
-<select id="method" name="Preferred Option">
-<option>Shipping</option>
-<option>Meetup</option>
-<option>Pickup</option>
-<option>Delivery discussion</option>
-</select>
+    <label for="method">Preferred Option</label>
+    <select id="method" name="preferred_option">
+      <option>Meetup</option>
+      <option>Pickup</option>
+      <option>Delivery</option>
+      <option>Shipping</option>
+    </select>
 
-<label for="message">Extra details</label>
-<textarea id="message" name="Details"
-placeholder="Tell us what item, color, size, or version you're looking for."></textarea>
+    <label for="message">Extra Details</label>
+    <textarea
+      id="message"
+      name="details"
+      placeholder="Tell us what you're looking for..."
+    ></textarea>
 
-<br><br>
+    <input type="hidden" name="_subject" value="New VONTE RESELLZ Product Request">
 
-<button class="btn" type="submit">
-Send Pricing Request
-</button>
+    <br><br>
 
-<p class="notice">
-After you send a request, VONTE RESELLZ can provide
-pricing, item details, availability, and estimated shipping time.
-</p>
+    <button class="btn" type="submit">
+      Request Pricing
+    </button>
 
-</form>
+    <p class="notice">
+      We'll review your request and contact you with availability, price,
+      item details, and purchase options.
+    </p>
+
+  </form>
 </section>
 
 <!-- CONTACT -->
