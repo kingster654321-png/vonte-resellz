@@ -3,14 +3,10 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>VONTE RESELLZ</title>
-
-<!-- Streetwear-style font -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
-
 <style>
 :root{
   --purple:#7c3aed;
@@ -18,23 +14,14 @@
   --dark:#080b16;
   --light:#f5f7ff;
 }
-
-*{
-  box-sizing:border-box;
-}
-
-html{
-  scroll-behavior:smooth;
-}
-
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
 body{
   margin:0;
   font-family:Inter,Arial,sans-serif;
   background:var(--light);
   color:#111827;
 }
-
-/* HEADER */
 header{
   background:linear-gradient(135deg,var(--purple),var(--blue));
   color:white;
@@ -45,42 +32,35 @@ header{
   gap:15px;
   flex-wrap:wrap;
 }
-
 .logo{
   font-family:Anton,Impact,sans-serif;
   font-size:27px;
   letter-spacing:2px;
 }
-
 nav a{
   color:white;
   text-decoration:none;
   margin:0 8px;
   font-weight:800;
 }
-
-/* HERO */
 .hero{
   padding:70px 7%;
   background:var(--dark);
   color:white;
   text-align:center;
 }
-
 .hero h1{
   font-family:Anton,Impact,sans-serif;
   font-size:clamp(42px,9vw,78px);
   letter-spacing:2px;
   margin:0 0 15px;
 }
-
 .hero p{
   font-size:18px;
   color:#dbeafe;
   max-width:700px;
   margin:0 auto 25px;
 }
-
 .btn{
   display:inline-block;
   border:0;
@@ -93,24 +73,18 @@ nav a{
   cursor:pointer;
   transition:.2s;
 }
-
 .btn:hover{
   transform:translateY(-2px) scale(1.03);
 }
-
-/* SECTIONS */
 section{
   padding:45px 7%;
   max-width:1300px;
   margin:auto;
 }
-
 h2{
   text-align:center;
   font-size:34px;
 }
-
-/* ANIMATED CATALOGUE */
 .catalog-showcase{
   min-height:230px;
   border-radius:22px;
@@ -132,7 +106,6 @@ h2{
   animation:gradientMove 7s ease infinite;
   box-shadow:0 10px 35px #11182730;
 }
-
 .catalog-showcase::before{
   content:"";
   position:absolute;
@@ -146,7 +119,6 @@ h2{
   transform:rotate(20deg);
   animation:shine 4s infinite;
 }
-
 .catalog-title{
   position:relative;
   z-index:2;
@@ -159,7 +131,6 @@ h2{
     0 0 30px rgba(37,99,235,.6);
   animation:logoPulse 2.5s ease-in-out infinite;
 }
-
 .catalog-subtitle{
   position:absolute;
   bottom:25px;
@@ -168,24 +139,19 @@ h2{
   font-weight:700;
   letter-spacing:1px;
 }
-
 @keyframes gradientMove{
   0%{background-position:0% 50%}
   50%{background-position:100% 50%}
   100%{background-position:0% 50%}
 }
-
 @keyframes shine{
   0%{left:-100%}
   100%{left:100%}
 }
-
 @keyframes logoPulse{
   0%,100%{transform:scale(1)}
   50%{transform:scale(1.04)}
 }
-
-/* CATALOGUE */
 .category-note{
   background:#eef2ff;
   border-left:5px solid var(--purple);
@@ -193,13 +159,11 @@ h2{
   border-radius:10px;
   margin:20px 0;
 }
-
 .grid{
   display:grid;
   grid-template-columns:repeat(auto-fit,minmax(210px,1fr));
   gap:20px;
 }
-
 .card{
   background:white;
   border-radius:18px;
@@ -207,11 +171,9 @@ h2{
   box-shadow:0 6px 22px #11182715;
   transition:.2s;
 }
-
 .card:hover{
   transform:translateY(-4px);
 }
-
 .product-img{
   height:150px;
   border-radius:13px;
@@ -220,20 +182,16 @@ h2{
   place-items:center;
   font-size:48px;
 }
-
 .brand{
   font-weight:900;
   color:var(--purple);
   text-transform:uppercase;
   letter-spacing:.5px;
 }
-
 .request-label{
   font-weight:800;
   margin:12px 0;
 }
-
-/* FORM */
 form{
   max-width:650px;
   margin:auto;
@@ -242,13 +200,11 @@ form{
   border-radius:18px;
   box-shadow:0 6px 22px #11182715;
 }
-
 label{
   display:block;
   font-weight:700;
   margin-top:13px;
 }
-
 input,
 select,
 textarea{
@@ -259,19 +215,66 @@ textarea{
   border-radius:10px;
   font:inherit;
 }
-
 textarea{
   min-height:110px;
 }
-
 .notice{
   font-size:13px;
   color:#64748b;
   text-align:center;
   margin-top:15px;
 }
-
-/* CONTACT */
+/* PAYMENT OPTIONS */
+.payment-box{
+  max-width:850px;
+  margin:auto;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(210px,1fr));
+  gap:18px;
+}
+.payment-card{
+  background:white;
+  border-radius:18px;
+  padding:25px 18px;
+  text-align:center;
+  box-shadow:0 6px 22px #11182715;
+  transition:.2s;
+}
+.payment-card:hover{
+  transform:translateY(-4px);
+}
+.payment-icon{
+  font-size:42px;
+  margin-bottom:10px;
+}
+.payment-card h3{
+  margin:8px 0;
+}
+.payment-card p{
+  color:#64748b;
+  font-size:14px;
+  line-height:1.5;
+}
+.payment-btn{
+  margin-top:10px;
+  width:100%;
+}
+.cashapp{
+  background:#16a34a;
+}
+.cashapp:hover{
+  background:#15803d;
+}
+.payment-security{
+  max-width:700px;
+  margin:25px auto 0;
+  padding:16px;
+  background:#eef2ff;
+  border-radius:12px;
+  text-align:center;
+  font-size:14px;
+  color:#475569;
+}
 .contact-box{
   text-align:center;
   background:white;
@@ -279,14 +282,11 @@ textarea{
   padding:25px;
   box-shadow:0 6px 22px #11182715;
 }
-
 .contact-link{
   color:var(--purple);
   font-weight:800;
   text-decoration:none;
 }
-
-/* FOOTER */
 footer{
   text-align:center;
   background:var(--dark);
@@ -295,42 +295,32 @@ footer{
 }
 </style>
 </head>
-
 <body>
-
 <header>
   <div class="logo">VONTE RESELLZ</div>
-
   <nav>
     <a href="#shop">Shop</a>
     <a href="#order">Order</a>
+    <a href="#payments">Payments</a>
     <a href="#contact">Contact</a>
   </nav>
 </header>
-
-<!-- HERO -->
 <div class="hero">
   <h1>FRESH DROPS. REAL STYLE.</h1>
-
   <p>
     Clothes, shoes, accessories, fragrances, and more —
     brought to you by VONTE RESELLZ.
   </p>
-
   <a class="btn" href="#shop">Shop Now</a>
 </div>
-
-<!-- ANIMATED CATALOGUE -->
 <section id="visual-catalog">
   <h2>Our Catalog</h2>
-
   <div class="catalog-showcase">
     <div class="catalog-title">VONTE RESELLZ</div>
     <div class="catalog-subtitle">
       FRESH DROPS • REAL STYLE • REQUEST PRICING
     </div>
   </div>
-
   <div class="category-note">
     <strong>REQUEST PRICING:</strong>
     Select an item below and send a request. We'll provide
@@ -338,15 +328,9 @@ footer{
     shipping or delivery time.
   </div>
 </section>
-
-<!-- SHOP -->
 <section id="shop">
 <h2>Brands & Categories</h2>
-
 <div class="grid">
-
-<!-- Each product has NO price -->
-
 <div class="card">
   <div class="product-img">👕</div>
   <div class="brand">Essentials</div>
@@ -354,7 +338,6 @@ footer{
   <div class="request-label">Request Pricing</div>
   <button class="btn" onclick="choose('Essentials')">Request Item</button>
 </div>
-
 <div class="card">
   <div class="product-img">🟣</div>
   <div class="brand">Purple</div>
@@ -362,7 +345,6 @@ footer{
   <div class="request-label">Request Pricing</div>
   <button class="btn" onclick="choose('Purple')">Request Item</button>
 </div>
-
 <div class="card">
   <div class="product-img">👖</div>
   <div class="brand">Ksubi</div>
@@ -370,7 +352,6 @@ footer{
   <div class="request-label">Request Pricing</div>
   <button class="btn" onclick="choose('Ksubi')">Request Item</button>
 </div>
-
 <div class="card">
   <div class="product-img">🕷️</div>
   <div class="brand">Sp5der</div>
@@ -378,7 +359,6 @@ footer{
   <div class="request-label">Request Pricing</div>
   <button class="btn" onclick="choose('Sp5der')">Request Item</button>
 </div>
-
 <div class="card">
   <div class="product-img">🧴</div>
   <div class="brand">Cologne</div>
@@ -386,7 +366,6 @@ footer{
   <div class="request-label">Request Pricing</div>
   <button class="btn" onclick="choose('Cologne')">Request Item</button>
 </div>
-
 <div class="card">
   <div class="product-img">👟</div>
   <div class="brand">Balenciaga</div>
@@ -394,7 +373,6 @@ footer{
   <div class="request-label">Request Pricing</div>
   <button class="btn" onclick="choose('Balenciaga')">Request Item</button>
 </div>
-
 <div class="card">
   <div class="product-img">👜</div>
   <div class="brand">Bottega</div>
@@ -402,7 +380,6 @@ footer{
   <div class="request-label">Request Pricing</div>
   <button class="btn" onclick="choose('Bottega')">Request Item</button>
 </div>
-
 <div class="card">
   <div class="product-img">🧢</div>
   <div class="brand">Supreme</div>
@@ -410,7 +387,6 @@ footer{
   <div class="request-label">Request Pricing</div>
   <button class="btn" onclick="choose('Supreme')">Request Item</button>
 </div>
-
 <div class="card">
   <div class="product-img">⭐</div>
   <div class="brand">Hellstar</div>
@@ -418,7 +394,6 @@ footer{
   <div class="request-label">Request Pricing</div>
   <button class="btn" onclick="choose('Hellstar')">Request Item</button>
 </div>
-
 <div class="card">
   <div class="product-img">👖</div>
   <div class="brand">Denim Tears</div>
@@ -426,7 +401,6 @@ footer{
   <div class="request-label">Request Pricing</div>
   <button class="btn" onclick="choose('Denim Tears')">Request Item</button>
 </div>
-
 <div class="card">
   <div class="product-img">💎</div>
   <div class="brand">Chrome Hearts</div>
@@ -434,7 +408,6 @@ footer{
   <div class="request-label">Request Pricing</div>
   <button class="btn" onclick="choose('Chrome Hearts')">Request Item</button>
 </div>
-
 <div class="card">
   <div class="product-img">🎨</div>
   <div class="brand">Gallery Dept.</div>
@@ -442,7 +415,6 @@ footer{
   <div class="request-label">Request Pricing</div>
   <button class="btn" onclick="choose('Gallery Dept.')">Request Item</button>
 </div>
-
 <div class="card">
   <div class="product-img">👕</div>
   <div class="brand">Amiri</div>
@@ -450,7 +422,6 @@ footer{
   <div class="request-label">Request Pricing</div>
   <button class="btn" onclick="choose('Amiri')">Request Item</button>
 </div>
-
 <div class="card">
   <div class="product-img">🩳</div>
   <div class="brand">Eric Emanuel</div>
@@ -458,7 +429,6 @@ footer{
   <div class="request-label">Request Pricing</div>
   <button class="btn" onclick="choose('Eric Emanuel')">Request Item</button>
 </div>
-
 <div class="card">
   <div class="product-img">🌴</div>
   <div class="brand">Palm Angels</div>
@@ -466,7 +436,6 @@ footer{
   <div class="request-label">Request Pricing</div>
   <button class="btn" onclick="choose('Palm Angels')">Request Item</button>
 </div>
-
 <div class="card">
   <div class="product-img">🖤</div>
   <div class="brand">VLONE</div>
@@ -474,7 +443,6 @@ footer{
   <div class="request-label">Request Pricing</div>
   <button class="btn" onclick="choose('VLONE')">Request Item</button>
 </div>
-
 <div class="card">
   <div class="product-img">🧢</div>
   <div class="brand">Warren Lotas</div>
@@ -482,7 +450,6 @@ footer{
   <div class="request-label">Request Pricing</div>
   <button class="btn" onclick="choose('Warren Lotas')">Request Item</button>
 </div>
-
 <div class="card">
   <div class="product-img">👟</div>
   <div class="brand">Rick Owens</div>
@@ -490,7 +457,6 @@ footer{
   <div class="request-label">Request Pricing</div>
   <button class="btn" onclick="choose('Rick Owens')">Request Item</button>
 </div>
-
 <div class="card">
   <div class="product-img">🧥</div>
   <div class="brand">Maison Margiela</div>
@@ -498,7 +464,6 @@ footer{
   <div class="request-label">Request Pricing</div>
   <button class="btn" onclick="choose('Maison Margiela')">Request Item</button>
 </div>
-
 <div class="card">
   <div class="product-img">🧥</div>
   <div class="brand">Moncler</div>
@@ -506,7 +471,6 @@ footer{
   <div class="request-label">Request Pricing</div>
   <button class="btn" onclick="choose('Moncler')">Request Item</button>
 </div>
-
 <div class="card">
   <div class="product-img">✝️</div>
   <div class="brand">Fear of God</div>
@@ -514,7 +478,6 @@ footer{
   <div class="request-label">Request Pricing</div>
   <button class="btn" onclick="choose('Fear of God')">Request Item</button>
 </div>
-
 <div class="card">
   <div class="product-img">👟</div>
   <div class="brand">Jordan</div>
@@ -522,7 +485,6 @@ footer{
   <div class="request-label">Request Pricing</div>
   <button class="btn" onclick="choose('Jordan')">Request Item</button>
 </div>
-
 <div class="card">
   <div class="product-img">👟</div>
   <div class="brand">Yeezy</div>
@@ -530,7 +492,6 @@ footer{
   <div class="request-label">Request Pricing</div>
   <button class="btn" onclick="choose('Yeezy')">Request Item</button>
 </div>
-
 <div class="card">
   <div class="product-img">👜</div>
   <div class="brand">Prada</div>
@@ -538,7 +499,6 @@ footer{
   <div class="request-label">Request Pricing</div>
   <button class="btn" onclick="choose('Prada')">Request Item</button>
 </div>
-
 <div class="card">
   <div class="product-img">👜</div>
   <div class="brand">Dior</div>
@@ -546,7 +506,6 @@ footer{
   <div class="request-label">Request Pricing</div>
   <button class="btn" onclick="choose('Dior')">Request Item</button>
 </div>
-
 <div class="card">
   <div class="product-img">👜</div>
   <div class="brand">Louis Vuitton</div>
@@ -554,7 +513,6 @@ footer{
   <div class="request-label">Request Pricing</div>
   <button class="btn" onclick="choose('Louis Vuitton')">Request Item</button>
 </div>
-
 <div class="card">
   <div class="product-img">🌊</div>
   <div class="brand">Stüssy</div>
@@ -562,7 +520,6 @@ footer{
   <div class="request-label">Request Pricing</div>
   <button class="btn" onclick="choose('Stüssy')">Request Item</button>
 </div>
-
 <div class="card">
   <div class="product-img">🧢</div>
   <div class="brand">Corteiz</div>
@@ -570,7 +527,6 @@ footer{
   <div class="request-label">Request Pricing</div>
   <button class="btn" onclick="choose('Corteiz')">Request Item</button>
 </div>
-
 <div class="card">
   <div class="product-img">👕</div>
   <div class="brand">Kapital</div>
@@ -578,7 +534,6 @@ footer{
   <div class="request-label">Request Pricing</div>
   <button class="btn" onclick="choose('Kapital')">Request Item</button>
 </div>
-
 <div class="card">
   <div class="product-img">👕</div>
   <div class="brand">Rhude</div>
@@ -586,7 +541,6 @@ footer{
   <div class="request-label">Request Pricing</div>
   <button class="btn" onclick="choose('Rhude')">Request Item</button>
 </div>
-
 <div class="card">
   <div class="product-img">⭐</div>
   <div class="brand">Trapstar</div>
@@ -594,7 +548,6 @@ footer{
   <div class="request-label">Request Pricing</div>
   <button class="btn" onclick="choose('Trapstar')">Request Item</button>
 </div>
-
 <div class="card">
   <div class="product-img">🧥</div>
   <div class="brand">Jackets</div>
@@ -602,7 +555,6 @@ footer{
   <div class="request-label">Request Pricing</div>
   <button class="btn" onclick="choose('Jackets')">Request Item</button>
 </div>
-
 <div class="card">
   <div class="product-img">👖</div>
   <div class="brand">Denim & Pants</div>
@@ -610,7 +562,6 @@ footer{
   <div class="request-label">Request Pricing</div>
   <button class="btn" onclick="choose('Denim & Pants')">Request Item</button>
 </div>
-
 <div class="card">
   <div class="product-img">🩳</div>
   <div class="brand">Shorts & Sweatpants</div>
@@ -618,7 +569,6 @@ footer{
   <div class="request-label">Request Pricing</div>
   <button class="btn" onclick="choose('Shorts & Sweatpants')">Request Item</button>
 </div>
-
 <div class="card">
   <div class="product-img">🎒</div>
   <div class="brand">Bags & Backpacks</div>
@@ -626,7 +576,6 @@ footer{
   <div class="request-label">Request Pricing</div>
   <button class="btn" onclick="choose('Bags & Backpacks')">Request Item</button>
 </div>
-
 <div class="card">
   <div class="product-img">🧢</div>
   <div class="brand">Hats & Beanies</div>
@@ -634,57 +583,23 @@ footer{
   <div class="request-label">Request Pricing</div>
   <button class="btn" onclick="choose('Hats & Beanies')">Request Item</button>
 </div>
-
 </div>
-
-<p class="notice">
-Select any item to request current pricing, availability,
-condition, sizing, and shipping/delivery information.
-</p>
-
 </section>
-
-<!-- ORDER REQUEST -->
 <section id="order">
   <h2>Request Pricing</h2>
-
   <form action="https://formspree.io/f/xgavvbvy" method="POST">
-
     <label for="name">Your Name</label>
-    <input
-      id="name"
-      name="name"
-      type="text"
-      placeholder="Enter your name"
-      required
-    >
-
+    <input id="name" name="name" type="text"
+           placeholder="Enter your name" required>
     <label for="email">Your Email</label>
-    <input
-      id="email"
-      name="email"
-      type="email"
-      placeholder="Enter your email"
-      required
-    >
-
+    <input id="email" name="email" type="email"
+           placeholder="Enter your email" required>
     <label for="item">Item / Brand</label>
-    <input
-      id="item"
-      name="item"
-      type="text"
-      placeholder="Example: Jordan 4s"
-      required
-    >
-
+    <input id="item" name="item" type="text"
+           placeholder="Example: Jordan 4s" required>
     <label for="size">Size</label>
-    <input
-      id="size"
-      name="size"
-      type="text"
-      placeholder="Example: 10"
-    >
-
+    <input id="size" name="size" type="text"
+           placeholder="Example: 10">
     <label for="method">Preferred Option</label>
     <select id="method" name="preferred_option">
       <option>Meetup</option>
@@ -692,44 +607,93 @@ condition, sizing, and shipping/delivery information.
       <option>Delivery</option>
       <option>Shipping</option>
     </select>
-
     <label for="message">Extra Details</label>
-    <textarea
-      id="message"
-      name="details"
-      placeholder="Tell us what you're looking for..."
-    ></textarea>
-
-    <input type="hidden" name="_subject" value="New VONTE RESELLZ Product Request">
-
+    <textarea id="message" name="details"
+      placeholder="Tell us what you're looking for..."></textarea>
+    <input type="hidden" name="_subject"
+      value="New VONTE RESELLZ Product Request">
     <br><br>
-
     <button class="btn" type="submit">
       Request Pricing
     </button>
-
     <p class="notice">
-      We'll review your request and contact you with availability, price,
-      item details, and purchase options.
+      We'll review your request and contact you with availability,
+      price, item details, and purchase options.
     </p>
-
   </form>
 </section>
-
-<!-- CONTACT -->
+<!-- PAYMENTS -->
+<section id="payments">
+  <h2>Payment Options</h2>
+  <p class="notice">
+    Secure and convenient ways to pay for your VONTE RESELLZ order.
+  </p>
+  <div class="payment-box">
+    <!-- STRIPE -->
+    <div class="payment-card">
+      <div class="payment-icon">💳</div>
+      <h3>Credit / Debit Card</h3>
+      <p>
+        Pay securely with Visa, Mastercard, American Express,
+        or other supported cards through Stripe.
+      </p>
+      <!-- Replace the # below with your Stripe Payment Link -->
+      <a
+        class="btn payment-btn"
+        href="#"
+        onclick="stripeComingSoon(event)">
+        Pay with Card
+      </a>
+    </div>
+    <!-- APPLE PAY -->
+    <div class="payment-card">
+      <div class="payment-icon"></div>
+      <h3>Apple Pay</h3>
+      <p>
+        Fast checkout with Apple Pay when supported by your
+        device and Stripe checkout.
+      </p>
+      <!-- Apple Pay is handled through the Stripe checkout -->
+      <a
+        class="btn payment-btn"
+        href="#"
+        onclick="stripeComingSoon(event)">
+        Pay with Apple Pay
+      </a>
+    </div>
+    <!-- CASH APP -->
+    <div class="payment-card">
+      <div class="payment-icon">💵</div>
+      <h3>Cash App</h3>
+      <p>
+        Pay directly through Cash App using the official
+        VONTE RESELLZ $Cashtag.
+      </p>
+      <a
+        class="btn payment-btn cashapp"
+        href="https://cash.app/$VONTEGOINGD1"
+        target="_blank"
+        rel="noopener">
+        Pay with Cash App
+      </a>
+    </div>
+  </div>
+  <div class="payment-security">
+    🔒 <strong>Secure Payments</strong><br>
+    Never enter your card information directly into this website.
+    Card and Apple Pay payments should be completed through Stripe's
+    secure checkout.
+  </div>
+</section>
 <section id="contact">
-
 <h2>Contact VONTE RESELLZ</h2>
-
 <div class="contact-box">
-
 <p>
 📞
 <a class="contact-link" href="tel:+14804891457">
 480-489-1457
 </a>
 </p>
-
 <p>
 📸
 <a
@@ -740,7 +704,6 @@ rel="noopener">
 @vonte.resellz
 </a>
 </p>
-
 <p>
 📧
 <a
@@ -749,23 +712,24 @@ href="mailto:javonte.diggs13@gmail.com">
 javonte.diggs13@gmail.com
 </a>
 </p>
-
 <p>📍 Phoenix, Arizona</p>
-
 </div>
-
 </section>
-
 <footer>
 © 2026 VONTE RESELLZ • Clothing & Shoes
 </footer>
-
 <script>
 function choose(item){
   document.getElementById('item').value=item;
   location.hash='order';
 }
+function stripeComingSoon(event){
+  event.preventDefault();
+  alert(
+    "Stripe checkout is not connected yet. " +
+    "Please contact VONTE RESELLZ for the current payment link."
+  );
+}
 </script>
-
 </body>
 </html>
